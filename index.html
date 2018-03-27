@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tika</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="images/logo.svg" class="logo" />
+        <img src="images/burger.png" class="burger mobile" />
+        <ul class="menu">
+          <li><a href="#slideshow">PROGRAMI</a></li>
+          <li><a href="#news">NOVOSTI</a></li>
+          <li><a href="#download">DOWNLOAD</a></li>
+          <li><a href="#purchase">ONLINE KUPOVINA</a></li>
+          <li><a href="#reference">REFERENCE</a></li>
+          <li><a href="#contact">KONTAKT</a><li>
+        </ul>
+      </nav>
+    </header>
+
+    <span class="anchor" id="slideshow"></span>
+    <section class="slideshow desktop">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="wrapper">
+        <div class="slide fade">
+          <div class="flex">
+            <img src="images/softwares.jpg" class="softwares" />
+            <div class="slideshow-text">
+              <h1>Acad GRAC</h1>
+              <div>
+                <span>Namenjen je prvenstveno geodetskim stručnjacima, da svoje terenske podatke merenja na jednostavan nacin uvedu u CAD okruzenje i uz pomoć klasičnih i ciljano kreiranih novih komandi, na što jednostavniji način dođu do željenog crteža.</span>
+                <span>Dodatak za CAD programe:</span>
+                <span>BricsCAD verzija v11 - v12</span>
+                <span>AutoCAD sve verzije od 2000. do 2012.</span>
+                <span>ProgeCAD verzija 2010/2011</span>
+                <span>uz neznatne dorade i ostale programe na bazi InteliCAD-a.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="flex">
+            <img src="images/geodet.svg" class="geodet" />
+            <div class="slideshow-text">
+              <h1>Grac</h1>
+              <span>Paket GRAC, geodetskom stručnjaku omogućava da brzo, lako i efikasno, svoje terenske podatke unese u računar, sračuna koordinate, izvrši dodatna računanja, na ekranu izvrši osnovno formiranje slike (spajanje snimljene situacije), sračuna trigonometrijske obrasce, afinu transformaciju ili izračuna tahimetriju, ili da formiran poluproizvod eksportuje u neki viši programski paket (AutoCAD, BricsCAD, ProgeCAD) na finalnu obradu.</span>
+              <span>Logika klasičnog geodetskog načina rada (koja se kroz školovanje geodetskih stručnjaka izučava) prihvaćena je kao osnovna interaktivnog komuniciranja sa kompjuterom u svim svih delova programskog paketa.</span>
+              <span>GRAC je programsko okruženje za čije korišćenje nije potrebna skupocea racunarska oprema, kao ni visi nivo poznavanja rada na racunaru. Potrebno vreme da se skoro svaki stručnjak osposobi za korišćenje ovog paketa je veoma malo, i može se svesti na svega 2-3 dana intenzivnijeg rada. To ga cini idealnim za geodetske strucnjake koji zele da ubrzaju svoje svakodnevne kancelarijske poslove na jednostavan nacin.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+    <section class="slideshow mobile">
+      <div class="wrapper">
+        <div class="flex">
+          <h1>Acad GRAC</h1>
+          <img src="images/softwares.jpg" class="softwares" />
+          <div class="slideshow-text">
+            <div>
+              <span>Namenjen je prvenstveno geodetskim stručnjacima, da svoje terenske podatke merenja na jednostavan nacin uvedu u CAD okruzenje i uz pomoć klasičnih i ciljano kreiranih novih komandi, na što jednostavniji način dođu do željenog crteža.</span>
+              <span>Dodatak za CAD programe:</span>
+              <span>BricsCAD verzija v11 - v12</span>
+              <span>AutoCAD sve verzije od 2000. do 2012.</span>
+              <span>ProgeCAD verzija 2010/2011</span>
+              <span>uz neznatne dorade i ostale programe na bazi InteliCAD-a.</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <h1>Grac</h1>
+          <img src="images/geodet.svg" class="geodet" />
+          <div class="slideshow-text">
+            <span>Paket GRAC, geodetskom stručnjaku omogućava da brzo, lako i efikasno, svoje terenske podatke unese u računar, sračuna koordinate, izvrši dodatna računanja, na ekranu izvrši osnovno formiranje slike (spajanje snimljene situacije), sračuna trigonometrijske obrasce, afinu transformaciju ili izračuna tahimetriju, ili da formiran poluproizvod eksportuje u neki viši programski paket (AutoCAD, BricsCAD, ProgeCAD) na finalnu obradu.</span>
+            <span>Logika klasičnog geodetskog načina rada (koja se kroz školovanje geodetskih stručnjaka izučava) prihvaćena je kao osnovna interaktivnog komuniciranja sa kompjuterom u svim svih delova programskog paketa.</span>
+            <span>GRAC je programsko okruženje za čije korišćenje nije potrebna skupocea racunarska oprema, kao ni visi nivo poznavanja rada na racunaru. Potrebno vreme da se skoro svaki stručnjak osposobi za korišćenje ovog paketa je veoma malo, i može se svesti na svega 2-3 dana intenzivnijeg rada. To ga cini idealnim za geodetske strucnjake koji zele da ubrzaju svoje svakodnevne kancelarijske poslove na jednostavan nacin.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <span class="anchor" id="news"></span>
+    <section class="news">
+      <h1>Novosti</h1>
+    </section>
+
+    <span class="anchor" id="download"></span>
+    <section class="download">
+      <div class="wrapper">
+        <h1>Download</h1>
+        <h4>Vodič za instalaciju AcadGRAC-a, dodatka programu AutoCAD, BricsCAD i ProgeCAD</h4>
+        <span>Za upotrebu ovog paketa potreban vam je Tikin Ključ (Hard Lock), koji možete preuzeti kontaktiranjem putem <a href="mailto:tika.bojanic@gmail.com?Subject=subject message" target="_blank">mejla</a>, ili pozivom na <a href="tel:+381-63-476-438" class="mobile">telefon</a><span class="desktop">telefon</span>.</span>
+        <ol>
+          <li class="num">Neophodni driver-i za prepoznavanje Tikinog Ključa (Hard Lock):</li>
+          <ol>
+            <li class="abc"><a href="assets/download/haspacadgrac-install.exe" download>HASPAcadGRAC-Install.exe</a></li>
+            <li class="abc"><a href="assets/download/HASPUserSetup.exe" download>HASPUserSetup.exe</a></li>
+          </ol>
+          <li class="num">Preuzimanje najnovije verzije AcadGRAC-a: <a href="assets/download/UCGRAC2002setup.exe" download>UCGRAC2002setup.exe</a></li>
+          <li class="num">Nakon što ste preuzeli i instalirali driver-e za Hard Lock i instalirali AcadGrac, uklučite Hard Lock u slobodni USB ulaz na vašem računaru</li>
+          <li class="num">Pokrenite "AcadGrac AutoCAD" ikonicu koja je generisana nakon instalacije AcadGRAC-a</li>
+        </ol>
+        <span><strong>Napomena:</strong> Paket AcadGRAC radi na svim CAD zasnovanim programima, bez potrebe dodatnog prilagođavanja i podešavanja. Za učenje AcadGRAC paketa, preuzmite <a href="assets/download/acadgrac.pdf" download>naš priručnik</a> ili zapratite naš <a href="https://www.youtube.com/channel/UCFR7DpUYJzd-eCqZoqyjpWw?view_as=subscriber">YouTube kanal</a>, gde ćemo blagovremeno prelaziti preko alata i mogućnosti AcadGRAC paketa.</span>
+        <h4>Vodič za instalaciju Grac-a</h4>
+        <span>Za preuzimanje ovog paketa kontaktirajte nas <a href="mailto:tika.bojanic@gmail.com?Subject=subject message" target="_blank">mejlom</a>, ili putem <a href="tel:+381-63-476-438" class="mobile">telefona</a><span class="inline desktop">telefona</span>.</span>
+        <span><strong>Napomena:</strong> GRAC je program koji radi nezavisno od drugih programa. Na operativnim sistemima Windows XP ili starijim, dovoljno je instalirati ga i koristiti. Za operativne sisteme Windows 7 i novije, potrebno je preuzeti DOS BOX - program koji emulira DOS okruzenje u kojem je razvijen program GRAC.</span>
+
+        <div class="gallery">
+          <h2>Album</h2>
+          <div class="gallery-container">
+            <div class="albums">
+              <div>
+                <span class="index-name">AcadGrac</span>
+                <span class="centered">Alati</span>
+              </div>
+              <div>
+                <span class="index-name">AcadGrac</span>
+                <span class="centered">Rezultati<br>(crtezi)</span>
+              </div>
+              <div>
+                <span class="index-name">AcadGrac</span>
+                <span class="centered">Rezultati<br>(zapisnici)</span>
+              </div>
+              <div>
+                <span class="index-name">Grac</span>
+                <span class="centered">Rezultati<br>(zapisnici)</span>
+              </div>
+            </div>
+            <div class="image-preview">
+            </div>
+            <span class="clearfix"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <span class="anchor" id="purchase"></span>
+    <section class="purchase">
+      <div class="wrapper">
+        <h1>Online kupovina</h1>
+        <div class="row">
+        <article class="col-lg-8">
+          <h3>Dodatak za CAD programe, AcadGRAC<span class="price"> 1500&euro;</span></h3>
+          <ul>
+            <li>Mogućnost plaćanja u 4 rate</li>
+            <li>Korisnici GRAC paketa mogu da doplate razliku cene GRAC-a do cene AcadGRAC paketa.</li>
+            <li>Na kupovinu više od dva ključa, dobija se rastući popust od 100&euro; na svaki sledeći ključ.</li>
+            <li>Uz kupovinu AcadGRAC-a dobija se i programski paket GRAC za 3 računara.</li>
+            <li>Dobija se i licenca za registraciju firme kod RGZ-a.</li>
+            <li>Kompatibilan sa svim verzijama CAD programa, vrlo brzo nakon izlazaka novih verzija.</li>
+          </ul>
+          <h3>AcadGRAC test verzija: Besplatno</h3>
+          <ul>
+            <li>Trajanje: 2 meseca</li>
+            <li>Zbog vrednosti USB ključa, ostavlja se zalog od 50&euro;</li>
+            <li>Nakon povratka USB ključa, novac vam se vraća</li>
+            <li>Ukoliko poželite da kupite AcadGRAC, cena AcadGRAC-a se smanjuje za založeni iznos</li>
+          </ul>
+          <h3>Programski paket GRAC: 400&euro;</h3>
+          <ul>
+            <li>Uključena je i licenca za registraciju firme kod RGZ-a</li>
+            <li>Korisnici koji su koristili GRAC na starim operativnim sistemima (Windows XP ili stariji), mogu da dobiju verziju za nove operativne sisteme (Windows 7 i noviji) po ceni od 100&euro; za prvi računar, i 50&euro; za svaki sledeći.</li>
+            <li>U cenu je uračunata prva instalacija i podešavanje GRAC-a na vašem računaru.</li>
+          </ul>
+        </article>
+        <form id="user-form" class="col-lg-4">
+          <div class="customer-info">
+            <span>Vaši podaci</span>
+            <label>Ime i prezime</label>
+            <input type="text" name="inputname">
+            <label>E-mail*</label>
+            <input type="text" name="inputemail">
+          </div>
+          <div class="message-content">
+            <label>Poruka*</label>
+            <textarea name="message" form="user-form" placeholder="Unesite Vašu poruku...">
+            </textarea>
+            <input type="submit" value="POŠALJI">
+          </div>
+        </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/scripts/myscript.js"></script>
+  </body>
+
+</html>

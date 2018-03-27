@@ -1,0 +1,412 @@
+body {
+  margin: 0;
+  font-family: 'Oxygen', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul, ol {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style-type: none; }
+
+h1, h2, h3, h4, h5 h6 {
+  margin: 0;
+  font-family: 'Francois One', sans-serif; }
+
+h1::after {
+  content: ' ';
+  display: block;
+  border: 1px solid #57ffff;
+  width: 50px;
+  margin: auto;
+  margin-bottom: 35px; }
+
+/* Header */
+header {
+  height: 300px;
+  background-color: pink; }
+
+/* Navigation */
+nav {
+  background-color: #364f4f;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 2px 2px #303030;
+  z-index: 1; }
+  nav a {
+    font-family: "Palanquin Thin";
+    font-size: 14px;
+    color: #ffffff; }
+  nav ul li {
+    display: inline-block;
+    padding: 0 5px; }
+
+.menu {
+  float: right;
+  padding-right: 1%; }
+  .menu li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .2s ease; }
+  .menu li:hover:after {
+    width: 100%;
+    background-color: #57ffff; }
+  .menu li:hover a {
+    color: #57ffff; }
+
+/* Softwares */
+.prev, .next {
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+  font-size: 70px;
+  transition: 0.6s ease;
+  position: absolute; }
+
+.prev:hover, .next:hover {
+  color: #303030; }
+
+.slide-dots {
+  text-align: center;
+  position: relative; }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border: 1px solid #303030;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #303030; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+.slideshow {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: relative;
+  margin: auto;
+  padding: 40px 0;
+  text-align: left; }
+  .slideshow h1::after {
+    display: none; }
+
+.slideshow-text {
+  width: 60%;
+  color: #303030; }
+  .slideshow-text h1 {
+    color: #57ffff; }
+  .slideshow-text span {
+    display: block; }
+
+.slide img {
+  position: relative; }
+
+/* News */
+.news {
+  color: #ffffff;
+  background-color: #000000;
+  height: 200px; }
+
+/* Download */
+.download {
+  text-align: center;
+  background-color: #303030;
+  color: #bbbbbb; }
+  .download h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #ffffff; }
+  .download h1, .download h4 {
+    color: #ffffff; }
+  .download h4 {
+    font-size: 16px;
+    margin: 10px 0; }
+  .download ol {
+    text-align: left;
+    margin: auto;
+    width: 50%; }
+  .download .abc {
+    list-style-type: lower-latin; }
+  .download .num {
+    list-style-type: decimal; }
+  .download span {
+    line-height: 20px; }
+  .download a {
+    color: #57ffff; }
+  .download a:hover {
+    color: #ffffff;
+    text-decoration: underline; }
+  .download span {
+    display: block; }
+  .download .desktop {
+    display: inline; }
+
+/* Gallery */
+/* Purchase */
+/* Customers */
+/* References */
+/* Contact */
+/* Footer */
+/* --------------- DESKTOP STYLE --------------- */
+@media screen and (min-width: 1200px) {
+  .mobile {
+    display: none; }
+  .wrapper {
+    width: 80%;
+    margin: auto; }
+  /* Header */
+  /* Navigation */
+  h1 {
+    font-size: 36px; }
+  .logo {
+    width: 250px;
+    margin-left: 10%; }
+  nav {
+    height: 44px; }
+    nav a {
+      line-height: 40px; }
+  /* Softwares */
+  .prev, .next {
+    margin-top: 150px; }
+  .prev {
+    left: 8%; }
+  .next {
+    right: 8%; }
+  .slide {
+    min-height: 400px;
+    display: none; }
+    .slide .flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+  .geodet {
+    width: 25%;
+    padding-top: 40px;
+    margin-left: 40px; }
+  .softwares {
+    padding-top: 40px;
+    margin-left: 40px; }
+  .slideshow-text {
+    margin-right: 40px; }
+  /* News */
+  /* Download */
+  .download {
+    padding: 40px 0; }
+  /* Gallery */
+  /* Purchase */
+  .purchase {
+    padding: 20px 0;
+    background-color: #bbbbbb; }
+    .purchase h1 {
+      text-align: center; }
+    .purchase h3 {
+      color: #364f4f; }
+    .purchase li {
+      line-height: 18px;
+      font-size: 16px;
+      font-family: "Palanquin Thin";
+      width: 80%;
+      list-style-type: square;
+      margin-left: 40px; }
+    .purchase ul {
+      margin-bottom: 20px; }
+      .purchase ul:last-child {
+        margin-bottom: 0; }
+    .purchase form input, .purchase form textarea {
+      display: block;
+      padding: 5px;
+      border: 1px solid #364f4f; }
+      .purchase form input:hover, .purchase form textarea:hover {
+        -moz-box-shadow: 0 0 4px #57ffff;
+        -webkit-box-shadow: 0 0 4px #57ffff;
+        box-shadow: 0 0 4px #57ffff;
+        border: 1px solid #57ffff; }
+      .purchase form input:focus, .purchase form textarea:focus {
+        -moz-box-shadow: 0 0 4px #57ffff;
+        -webkit-box-shadow: 0 0 4px #57ffff;
+        box-shadow: 0 0 4px #57ffff;
+        border: 1px solid #57ffff; }
+    .purchase form span {
+      display: block;
+      font-family: "Palanquin SemiBold"; }
+    .purchase form ::placeholder {
+      font-family: "Palanquin Light";
+      font-size: 14px;
+      line-height: 14px; }
+    .purchase input {
+      width: 80%; }
+    .purchase textarea {
+      height: 200px;
+      width: 100%;
+      font-family: "Palanquin Light";
+      font-size: 14px;
+      line-height: 14px; }
+    .purchase .message-content input {
+      margin: auto;
+      margin-top: 5px;
+      width: 100px;
+      background-color: #303030;
+      color: #bbbbbb;
+      font-family: "Palanquin Dark";
+      line-height: 14px; }
+      .purchase .message-content input:hover {
+        background-color: #ffffff;
+        color: #303030; }
+    .purchase .message-content label {
+      font-family: "Palanquin ExtraLight"; }
+  /* Customers */
+  /* References */
+  /* Contact */
+  /* Footer */ }
+
+/* --------------- TABLET STYLE --------------- */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .wrapper {
+    width: 80%;
+    margin: auto; }
+  /* Header */
+  /* Navigation */
+  nav {
+    height: 41px; }
+  .menu {
+    display: none; }
+  .burger {
+    float: right;
+    margin-right: 5%; }
+  .logo {
+    width: 230px;
+    margin-left: 10%; }
+  /* Softwares */
+  .slide {
+    min-height: 500px;
+    display: none; }
+    .slide .flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+  .slideshow.mobile {
+    display: none; }
+  .geodet {
+    width: 30%;
+    padding-top: 20px; }
+  .softwares {
+    width: 180px;
+    padding-top: 90px; }
+  .prev, .next {
+    margin-top: 150px; }
+  .prev {
+    left: 4%; }
+  .next {
+    right: 4%; }
+  /* News */
+  /* Download */
+  .download {
+    padding: 20px 0; }
+    .download ol {
+      width: 66%; }
+  /* Gallery */
+  /* Purchase */
+  /* Customers */
+  /* References */
+  /* Contact */
+  /* Footer */ }
+
+/* --------------- MOBILE TABLET --------------- */
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none; }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  /* Header */
+  header {
+    height: 300px;
+    background-color: pink; }
+  /* Navigation */
+  .menu {
+    display: none; }
+  nav {
+    height: 35px;
+    padding-top: 3px;
+    text-align: center; }
+  .logo {
+    width: 180px; }
+  .burger {
+    position: absolute;
+    right: 2%; }
+  /* Softwares */
+  .slideshow {
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 16px; }
+    .slideshow h1::after {
+      content: ' ';
+      display: block;
+      border: 1px solid #57ffff;
+      width: 50px;
+      margin: auto;
+      margin-bottom: 35px; }
+  .slideshow-text {
+    width: 94%;
+    margin: auto;
+    font-size: 14px;
+    text-align: justify; }
+  .softwares {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 12px; }
+  .geodet {
+    width: 80%;
+    margin: 0 auto 12px auto; }
+  /* News */
+  /* Download */
+  .download {
+    padding: 20px 0; }
+    .download .wrapper {
+      width: 94%;
+      margin: auto; }
+    .download h4 {
+      font-size: 14px; }
+    .download span, .download li {
+      font-size: 14px; }
+    .download span {
+      text-align: justify; }
+    .download ol {
+      width: 66%; }
+  /* Gallery */
+  /* Purchase */
+  /* Customers */
+  /* References */
+  /* Contact */
+  /* Footer */ }
