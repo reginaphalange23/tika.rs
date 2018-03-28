@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tika</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="images/logo.svg" class="logo" />
+        <img src="images/burger.png" class="burger mobile" />
+        <ul class="menu">
+          <li><a href="#slideshow">PROGRAMI</a></li>
+          <li><a href="#news">NOVOSTI</a></li>
+          <li><a href="#download">DOWNLOAD</a></li>
+          <li><a href="#purchase">ONLINE KUPOVINA</a></li>
+          <li><a href="#reference">REFERENCE</a></li>
+          <li><a href="#contact">KONTAKT</a><li>
+        </ul>
+      </nav>
+    </header>
+
+    <span class="anchor" id="slideshow"></span>
+    <section class="slideshow desktop">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="wrapper">
+        <div class="slide fade">
+          <div class="flex">
+            <img src="images/softwares.jpg" class="softwares" />
+            <div class="slideshow-text">
+              <h1>Acad GRAC</h1>
+              <div>
+                <span>Namenjen je prvenstveno geodetskim stručnjacima, da svoje terenske podatke merenja na jednostavan nacin uvedu u CAD okruzenje i uz pomoć klasičnih i ciljano kreiranih novih komandi, na što jednostavniji način dođu do željenog crteža.</span>
+                <span>Dodatak za CAD programe:</span>
+                <span>BricsCAD verzija v11 - v12</span>
+                <span>AutoCAD sve verzije od 2000. do 2012.</span>
+                <span>ProgeCAD verzija 2010/2011</span>
+                <span>uz neznatne dorade i ostale programe na bazi InteliCAD-a.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="flex">
+            <img src="images/geodet.svg" class="geodet" />
+            <div class="slideshow-text">
+              <h1>Grac</h1>
+              <span>Paket GRAC, geodetskom stručnjaku omogućava da brzo, lako i efikasno, svoje terenske podatke unese u računar, sračuna koordinate, izvrši dodatna računanja, na ekranu izvrši osnovno formiranje slike (spajanje snimljene situacije), sračuna trigonometrijske obrasce, afinu transformaciju ili izračuna tahimetriju, ili da formiran poluproizvod eksportuje u neki viši programski paket (AutoCAD, BricsCAD, ProgeCAD) na finalnu obradu.</span>
+              <span>Logika klasičnog geodetskog načina rada (koja se kroz školovanje geodetskih stručnjaka izučava) prihvaćena je kao osnovna interaktivnog komuniciranja sa kompjuterom u svim svih delova programskog paketa.</span>
+              <span>GRAC je programsko okruženje za čije korišćenje nije potrebna skupocea racunarska oprema, kao ni visi nivo poznavanja rada na racunaru. Potrebno vreme da se skoro svaki stručnjak osposobi za korišćenje ovog paketa je veoma malo, i može se svesti na svega 2-3 dana intenzivnijeg rada. To ga cini idealnim za geodetske strucnjake koji zele da ubrzaju svoje svakodnevne kancelarijske poslove na jednostavan nacin.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+    <section class="slideshow mobile">
+      <div class="wrapper">
+        <div class="flex">
+          <h1>Acad GRAC</h1>
+          <img src="images/softwares.jpg" class="softwares" />
+          <div class="slideshow-text">
+            <div>
+              <span>Namenjen je prvenstveno geodetskim stručnjacima, da svoje terenske podatke merenja na jednostavan nacin uvedu u CAD okruzenje i uz pomoć klasičnih i ciljano kreiranih novih komandi, na što jednostavniji način dođu do željenog crteža.</span>
+              <span>Dodatak za CAD programe:</span>
+              <span>BricsCAD verzija v11 - v12</span>
+              <span>AutoCAD sve verzije od 2000. do 2012.</span>
+              <span>ProgeCAD verzija 2010/2011</span>
+              <span>uz neznatne dorade i ostale programe na bazi InteliCAD-a.</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <h1>Grac</h1>
+          <img src="images/geodet.svg" class="geodet" />
+          <div class="slideshow-text">
+            <span>Paket GRAC, geodetskom stručnjaku omogućava da brzo, lako i efikasno, svoje terenske podatke unese u računar, sračuna koordinate, izvrši dodatna računanja, na ekranu izvrši osnovno formiranje slike (spajanje snimljene situacije), sračuna trigonometrijske obrasce, afinu transformaciju ili izračuna tahimetriju, ili da formiran poluproizvod eksportuje u neki viši programski paket (AutoCAD, BricsCAD, ProgeCAD) na finalnu obradu.</span>
+            <span>Logika klasičnog geodetskog načina rada (koja se kroz školovanje geodetskih stručnjaka izučava) prihvaćena je kao osnovna interaktivnog komuniciranja sa kompjuterom u svim svih delova programskog paketa.</span>
+            <span>GRAC je programsko okruženje za čije korišćenje nije potrebna skupocea racunarska oprema, kao ni visi nivo poznavanja rada na racunaru. Potrebno vreme da se skoro svaki stručnjak osposobi za korišćenje ovog paketa je veoma malo, i može se svesti na svega 2-3 dana intenzivnijeg rada. To ga cini idealnim za geodetske strucnjake koji zele da ubrzaju svoje svakodnevne kancelarijske poslove na jednostavan nacin.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <span class="anchor" id="news"></span>
+    <section class="news">
+      <h1>Novosti</h1>
+    </section>
+
+    <span class="anchor" id="download"></span>
+    <section class="download">
+      <div class="wrapper">
+        <h1>Download</h1>
+        <h4>Vodič za instalaciju AcadGRAC-a, dodatka programu AutoCAD, BricsCAD i ProgeCAD</h4>
+        <span>Za upotrebu ovog paketa potreban vam je Tikin Ključ (Hard Lock), koji možete preuzeti kontaktiranjem putem <a href="mailto:tika.bojanic@gmail.com?Subject=subject message" target="_blank">mejla</a>, ili pozivom na <a href="tel:+381-63-476-438" class="mobile">telefon</a><span class="desktop">telefon</span>.</span>
+        <ol>
+          <li class="num">Neophodni driver-i za prepoznavanje Tikinog Ključa (Hard Lock):</li>
+          <ol>
+            <li class="abc"><a href="assets/download/haspacadgrac-install.exe" download>HASPAcadGRAC-Install.exe</a></li>
+            <li class="abc"><a href="assets/download/HASPUserSetup.exe" download>HASPUserSetup.exe</a></li>
+          </ol>
+          <li class="num">Preuzimanje najnovije verzije AcadGRAC-a: <a href="assets/download/UCGRAC2002setup.exe" download>UCGRAC2002setup.exe</a></li>
+          <li class="num">Nakon što ste preuzeli i instalirali driver-e za Hard Lock i instalirali AcadGrac, uklučite Hard Lock u slobodni USB ulaz na vašem računaru</li>
+          <li class="num">Pokrenite "AcadGrac AutoCAD" ikonicu koja je generisana nakon instalacije AcadGRAC-a</li>
+        </ol>
+        <span><strong>Napomena:</strong> Paket AcadGRAC radi na svim CAD zasnovanim programima, bez potrebe dodatnog prilagođavanja i podešavanja. Za učenje AcadGRAC paketa, preuzmite <a href="assets/download/acadgrac.pdf" download>naš priručnik</a> ili zapratite naš <a href="https://www.youtube.com/channel/UCFR7DpUYJzd-eCqZoqyjpWw?view_as=subscriber">YouTube kanal</a>, gde ćemo blagovremeno prelaziti preko alata i mogućnosti AcadGRAC paketa.</span>
+        <h4>Vodič za instalaciju Grac-a</h4>
+        <span>Za preuzimanje ovog paketa kontaktirajte nas <a href="mailto:tika.bojanic@gmail.com?Subject=subject message" target="_blank">mejlom</a>, ili putem <a href="tel:+381-63-476-438" class="mobile">telefona</a><span class="inline desktop">telefona</span>.</span>
+        <span><strong>Napomena:</strong> GRAC je program koji radi nezavisno od drugih programa. Na operativnim sistemima Windows XP ili starijim, dovoljno je instalirati ga i koristiti. Za operativne sisteme Windows 7 i novije, potrebno je preuzeti DOS BOX - program koji emulira DOS okruzenje u kojem je razvijen program GRAC.</span>
+
+        <div class="gallery">
+          <h2>Album</h2>
+          <div class="gallery-container">
+            <div class="albums">
+              <div>
+                <span class="index-name">AcadGrac</span>
+                <span class="centered">Alati</span>
+              </div>
+              <div>
+                <span class="index-name">AcadGrac</span>
+                <span class="centered">Rezultati<br>(crtezi)</span>
+              </div>
+              <div>
+                <span class="index-name">AcadGrac</span>
+                <span class="centered">Rezultati<br>(zapisnici)</span>
+              </div>
+              <div>
+                <span class="index-name">Grac</span>
+                <span class="centered">Rezultati<br>(zapisnici)</span>
+              </div>
+            </div>
+            <div class="image-preview">
+            </div>
+            <span class="clearfix"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <span class="anchor" id="purchase"></span>
+    <section class="purchase">
+      <div class="wrapper">
+        <h1>Online kupovina</h1>
+        <div class="row">
+        <article class="col-lg-6 col-md-6">
+          <h3>Dodatak za CAD programe, AcadGRAC<span class="price"> 1500&euro;</span></h3>
+          <ul>
+            <li>Mogućnost plaćanja u 4 rate</li>
+            <li>Korisnici GRAC paketa mogu da doplate razliku cene GRAC-a do cene AcadGRAC paketa.</li>
+            <li>Na kupovinu više od dva ključa, dobija se rastući popust od 100&euro; na svaki sledeći ključ.</li>
+            <li>Uz kupovinu AcadGRAC-a dobija se i programski paket GRAC za 3 računara.</li>
+            <li>Dobija se i licenca za registraciju firme kod RGZ-a.</li>
+            <li>Kompatibilan sa svim verzijama CAD programa, vrlo brzo nakon izlazaka novih verzija.</li>
+          </ul>
+          <h3>AcadGRAC test verzija: Besplatno</h3>
+          <ul>
+            <li>Trajanje: 2 meseca</li>
+            <li>Zbog vrednosti USB ključa, ostavlja se zalog od 50&euro;</li>
+            <li>Nakon povratka USB ključa, novac vam se vraća</li>
+            <li>Ukoliko poželite da kupite AcadGRAC, cena AcadGRAC-a se smanjuje za založeni iznos</li>
+          </ul>
+          <h3>Programski paket GRAC: 400&euro;</h3>
+          <ul>
+            <li>Uključena je i licenca za registraciju firme kod RGZ-a</li>
+            <li>Korisnici koji su koristili GRAC na starim operativnim sistemima (Windows XP ili stariji), mogu da dobiju verziju za nove operativne sisteme (Windows 7 i noviji) po ceni od 100&euro; za prvi računar, i 50&euro; za svaki sledeći.</li>
+            <li>U cenu je uračunata prva instalacija i podešavanje GRAC-a na vašem računaru.</li>
+          </ul>
+        </article>
+        <form id="user-form" class="col-lg-6 col-md-6">
+          <div class="customer-info">
+            <label for="inputname">Ime i prezime</label>
+            <input type="text" name="inputname" id="name">
+            <label for="inputemail">E-mail*</label>
+            <input type="email" name="inputemail" id="email" required>
+          </div>
+          <div class="message-content">
+            <label for="message">Poruka*</label>
+            <textarea name="message" form="user-form" placeholder="Unesite Vašu poruku..." required>
+            </textarea>
+            <input type="submit" value="POŠALJI">
+          </div>
+        </form>
+        </div>
+      </div>
+    </section>
+
+    <span class="anchor" id="reference"></span>
+    <section class="customers">
+      <div class="section-break">
+        <h1>Spisak zadovoljnih mušterija</h1>
+      </div>
+      <div class="wrapper">
+        <div class="row">
+          <ul class="col-lg-3">
+            <li><strong>Geopanonija</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>Geomap</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>Geokoning</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>Direkcija za izgradnju</strong>, <span class="co-address"><em>Inđija</em></span></li>
+            <li><strong>Geobiro</strong>, <span class="co-address"><em>Bečej</em></span></li>
+            <li><strong>Hidroinvest DTD a.d.</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>Geodet</strong>, <span class="co-address"><em>Kovin</em></span></li>
+            <li><strong>Direkcija za urbanizam</strong>, <span class="co-address"><em>Vrbas</em></span></li>
+            <li><strong>InvestDom</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>GEO-S</strong>, <span class="co-address"><em>Šid</em></span></li>
+            <li><strong>Ušće, vodoprivreda</strong>, <span class="co-address"><em>Bela Crkva</em></span></li>
+            <li><strong>Eureka vig</strong>, <span class="co-address"><em>Beograd</em></span></li>
+          </ul>
+          <ul class="col-lg-3">
+            <li><strong>Geopolis</strong>, <span class="co-address"><em>Zrenjanin</em></span></li>
+            <li><strong>Geopanonija</strong>, <span class="co-address"><em>Zrenjanin</em></span></li>
+            <li><strong>Globus</strong>, <span class="co-address"><em>Zrenjanin</em></span></li>
+            <li><strong>Geobanat</strong>, <span class="co-address"><em>Zrenjanin</em></span></li>
+            <li><strong>KLM Inženjering</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>GEO-PM</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>VOJVODINAPUT-BACKA PUT</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>AB&Co GEOSYSTEMS</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>Geosoft</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>Opština Sremski Karlovci</strong> - <span class="co-address"><em>Sekretarijat za urbanizam</em></span></li>
+            <li><strong>JP Zavod za urbanizam Kula</strong>, <span class="co-address"><em>Odžaci</em></span></li>
+            <li><strong>Parcela</strong>, <span class="co-address"><em>Mali Idjoš</em></span></li>
+            <li><strong>Geotem</strong>, <span class="co-address"><em>Temerin</em></span></li>
+          </ul>
+          <ul class="col-lg-3">
+            <li><strong>Maja Grabovac</strong>, <span class="co-address"><em>Svilajnac</em></span></li>
+            <li><strong>KLM Inženjering</strong>, <span class="co-address"><em>Zrenjanin</em></span></li>
+            <li><strong>JP Nacionalni park</strong>, <span class="co-address"><em>Fruška Gora (Novi Sad)</em></span></li>
+            <li><strong>GEO-SISTEM</strong>, <span class="co-address"><em>Podgorica (Crna Gora)</em></span></li>
+            <li><strong>Rudnik bakra Majdanpek</strong>, <span class="co-address"><em>Majdanpek</em></span></li>
+            <li><strong>SAPUTNIK-M, MERIDIJAN PROJEKT</strong>, <span class="co-address"><em>Sombor</em></span></li>
+            <li><strong>GEO-EN</strong>, <span class="co-address"><em>Srbobran</em></span></li>
+            <li><strong>PETROVIĆ-GEODETSKI BIRO</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>GB STAMBOLIJA</strong>, <span class="co-address"><em>Zrenjanin</em></span></li>
+            <li><strong>Arkus</strong>, <span class="co-address"><em>Ada</em></span></li>
+            <li><strong>Geometar</strong>, <span class="co-address"><em>Veternik (Novi Sad)</em></span></li>
+            <li><strong>JUP PLAN</strong>, <span class="co-address"><em>Ruma</em></span></li>
+            <li><strong>NS Geodet</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+          </ul>
+          <ul class="col-lg-3">
+            <li><strong>GEO-KOMERC</strong>, <span class="co-address"><em>Ruma</em></span></li>
+            <li><strong>Geoid</strong>, <span class="co-address"><em>Pančevo</em></span></li>
+            <li><strong>COBI GEODETSKI BIRO</strong>, <span class="co-address"><em>Pećinci</em></span></li>
+            <li><strong>Geowork</strong>, <span class="co-address"><em>Kula</em></span></li>
+            <li><strong>Zavod za izgradnju grada</strong>, <span class="co-address"><em>Novi Sad</em></span></li>
+            <li><strong>Džogović company</strong>, <span class="co-address"><em>Smederevo</em></span></li>
+            <li><strong>Emery Gillies</strong></li>
+            <li><strong>Arleen Mccabe</strong></li>
+            <li><strong>Hanh Douglass</strong></li>
+            <li><strong>Henrietta Montz</strong></li>
+            <li><strong>Janna Ambrose</strong></li>
+            <li><strong>Lee Mahi</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="reference">
+        <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+        <a class="next" onclick="nextSlide(1)">&#10095;</a>
+        <div class="reference-ssh">
+          <span class="quotes"><em>"Wafer ice cream chocolate bar bear claw halvah candy. Soufflé caramels ice cream cake. Dessert bear claw apple pie."</em><br><strong>Nieves Easler</strong></span>
+          <span class="quotes"><em>"Oat cake sweet pie chocolate sesame snaps. Pudding cheesecake icing cotton candy. Ice cream lemon drops sugar plum danish brownie cheesecake lollipop liquorice. Cake tart croissant oat cake."</em><br><strong>Sally Osterberg</strong></span>
+          <span class="quotes"><em>"Cookie dessert donut tootsie roll. Sweet cheesecake macaroon candy tootsie roll carrot cake halvah icing. Pie pudding apple pie icing tootsie roll apple pie."</em><br><strong>Andres Pedroza</strong></span>
+          <span class="quotes"><em>"Topping cheesecake apple pie sweet. Sugar plum tootsie roll marzipan marzipan lollipop halvah fruitcake oat cake. Toffee lollipop oat cake cotton candy sweet chocolate bar ice cream sweet cotton candy."</em><br><strong>Hubert Urbaniak</strong></span>
+          <span class="quotes"><em>"Powder jelly dessert. Lollipop liquorice jujubes. Topping gingerbread cookie jujubes dessert chocolate."</em><br><strong>Kamala Sisneros</strong></span>
+      </div>
+    </section>
+
+    <span class="anchor" id="contact"></span>
+    <footer>
+      <div class="wrapper">
+        <div class="contact">
+          <div class="phone">
+            <a href="tel:+381-63-476-438">
+              <?xml version="1.0" encoding="utf-8"?>
+              <svg version="1.1" id="phone-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="0 0 120 100" style="enable-background:new 0 0 120 100;" xml:space="preserve">
+                <style type="text/css">
+                	.phone-hover{fill:#303030;}
+                </style>
+                <g id="XMLID_2_">
+                	<path id="XMLID_3_" class="phone-hover" d="M86,96.9c-1.6,0-3.3-0.2-5.3-0.5c-9.5-1.8-19.3-7.9-28.8-13.9c-9.4-5.9-19.2-12-24.3-10.4
+                		c-0.6,0.2-2.4,0.8-4,4.5c-1.4,3.3-1.5,5.9-0.3,7.5c2.6,3.4,11.4,4.9,22.4,3.7c0.3,0,0.4,0,0.6,0v7.2c0,0,0.1,0,0.3,0l-0.2,0
+                		c-19.4,2.1-26.5-3.2-29-6.5c-2-2.6-3.7-7.3-0.6-14.6c1.9-4.5,4.7-7.4,8.4-8.6c8.3-2.7,18.5,3.7,30.3,11.1
+                		c8.9,5.6,18.1,11.4,26.3,12.9c3.7,0.7,8.5,0.9,10.4-2.4c1.7-2.9,0.8-7.7-1.1-10.1c-0.3-0.4-0.8-0.9-1.2-1
+                		c-4.4,2.7-9.7,3.6-14.6,2.5l-0.2,0l-0.8-0.3c-1.1-0.3-2.1-0.7-3.1-1.1c-0.1,0-0.2-0.1-0.3-0.1c-19-8.2-39.7-33-45.7-40.6
+                		c-0.3-0.3-0.5-0.7-0.8-1c-0.6-0.7-1-1.4-1.3-2.1c-5-9-1.8-20.7,7.2-26.6c0.2-0.1,0.6-0.4,1-0.7c2.5-1.7,3.7-2.5,4.4-2.9L38,2.1
+                		l1.7,1.3c4.4,3.3,8.6,7.8,12.1,13.1c3.3,5,5.7,10.3,7,15.4l0.5,2.1l-1.6,1.5c-0.4,0.4-1.5,1.3-2.6,2.1c2.5,2.8,4.9,5.4,9,8.8
+                		c0.7-1.3,1.4-2.6,1.7-3l1.2-1.8l2.1,0.2c5.5,0.5,11.4,2.2,17.2,4.9c5.4,2.5,10.2,5.8,14,9.5l1.5,1.4l-0.5,2c-0.1,0.6-1.5,6-4.2,9.1
+                		l-5.4-4.8c0.8-0.9,1.5-2.6,2-4c-2.9-2.5-6.5-4.8-10.5-6.7c-4.2-2-8.4-3.3-12.4-3.9c-0.8,1.4-1.7,3.2-1.9,3.7
+                		c-0.1,0.2-0.1,0.3-0.2,0.5l-1.8,4.3l-3.7-2.8c-7.7-6-11-9.7-14.7-13.9c-0.4-0.5-0.9-1-1.4-1.5l-2.9-3.2l3.8-2.3
+                		c0.1-0.1,0.2-0.1,0.3-0.2c0.4-0.3,1.7-1.3,2.8-2.1c-1.2-3.7-3-7.4-5.4-11.1c-2.5-3.8-5.4-7.2-8.5-9.8c-0.6,0.4-1.2,0.8-1.6,1.1
+                		c-0.5,0.4-1,0.7-1.2,0.8c-5.9,3.9-8,11.4-4.8,17.1l0.1,0.2c0.1,0.2,0.3,0.5,0.6,0.9l0.1,0.1c0.2,0.2,0.3,0.4,0.5,0.7l0.1,0.1
+                		c3.2,4.1,9.9,12.1,18.2,20.2C58.7,61,67,67.2,74.2,70.2l0.4,0.2c0.6,0.3,1.3,0.5,1.9,0.7l0.1,0c3.2,0.9,6.8,0.3,9.7-1.5l0.8-0.5
+                		l0.4-0.1c3.3-1.2,6.8,0,9.4,3.2c3.6,4.4,5.3,12.5,1.8,18.4C97.1,93.1,93.6,96.9,86,96.9z"/>
+                </g>
+              </svg>
+            </a>
+            <ul>
+              <li>021/473-61-64</li>
+              <li>060/473-61-64</li>
+              <li>063/476-438</li>
+            </ul>
+          </div>
+          <div class="email">
+            <a href="mailto:tika.bojanic@gmail.com?Subject=subject message" target="_blank">
+              <svg id="mail-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <style>
+                  .mail-hover{fill:#303030}
+                </style>
+                <path id="XMLID_5_" class="mail-hover" d="M.1 44.5v45.9h100V40.1L48.4 70.7.1 40.2"/>
+                <path id="XMLID_4_" class="mail-hover" d="M3.1 36.8l13.7 7.7v-9.9h64v9.9l16.3-8.3L48.5 9.6 3.1 36.8"/>
+                <path id="XMLID_3_" class="mail-hover" d="M37 40.2h22.3v4.3H37z"/>
+                <path id="XMLID_2_" class="mail-hover" d="M36.8 48.8h22.3v4.3H36.8z"/>
+              </svg>
+            </a>
+            <ul>
+              <li>tikab@mts.rs</li>
+              <li>tihomir.bojanic@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <span>&copy;NutHouse Solutions 2018.<span>
+      </div>
+    </footer>
+
+    <script src="assets/scripts/myscript.js"></script>
+  </body>
+
+</html>
